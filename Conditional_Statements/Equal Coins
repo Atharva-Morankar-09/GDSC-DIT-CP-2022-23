@@ -1,0 +1,43 @@
+
+Question Link - https://www.codechef.com/submit/EQUALCOIN
+
+1) C++ :
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+ int t,x,y;
+ cin>>t;
+ while(t--)
+ {
+     cin>>x>>y;
+     if(x%2==0)
+     {
+         if(x==0 && y%2!=0)
+         {cout<<"NO"<<endl;
+             
+         }
+         else 
+         {
+           cout<<"YES"<<endl;
+         }
+         
+     }
+     else
+     {
+         cout<<"NO"<<endl;
+     }
+ }
+ return 0;
+}
+
+2) Python :
+
+t=int(input())
+for i in range(t):
+    a,b=map(int,input().split())
+    if (a%2==0 and(a>0 or b%2==0)):
+        print("YES")
+    else:
+        print("NO")
