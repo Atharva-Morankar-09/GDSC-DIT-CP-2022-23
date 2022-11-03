@@ -1,0 +1,36 @@
+
+Question Link - https://www.codechef.com/submit/THREEBOX
+
+1) C++ :
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() 
+{
+    int T,A,B,C,D;
+    cin>>T;
+    while(T--){
+           cin>>A>>B>>C>>D;
+           if(A+B+C<=D)
+           {cout<<1<<endl;}
+           else if(A+B<=D)
+           {cout<<2<<endl;}
+           else 
+           {cout<<3<<endl;}
+        }
+    return 0;
+}
+
+
+2) Python : 
+
+t=int(input())
+for j in range(t):
+    a,b,c,d=list(map(int,input().split()))
+    if(a+b+c<=d):
+        print(1)
+    elif(a+b<=d or a+c<=d or b+c<=d):        
+        print(2)
+    else:
+        print(3)
