@@ -1,0 +1,31 @@
+
+Question Link - https://www.codechef.com/problems/AMMEAT?tab=statement
+
+1) C++ :
+
+#include <bits/stdc++.h>
+#define ll long long
+using namespace std;
+
+int main(){
+	int t;
+	cin>>t;
+	while(t--){
+		ll int n,m,c=0,c1=0;
+		cin>>n>>m;
+		ll int arr[n];
+		for(int i=0;i<n;i++)
+		{
+		    cin>>arr[i];
+		}
+		sort(arr,arr+n,greater<ll int>());
+		for(int i=0;i<n;i++){
+			c+=arr[i];
+			c1++;
+			if(c>=m)break;
+		}
+		if(c>=m)cout<<c1<<endl;
+		else cout<<-1<<endl;
+	}
+	return 0;
+}
