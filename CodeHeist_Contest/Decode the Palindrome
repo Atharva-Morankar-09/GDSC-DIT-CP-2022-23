@@ -1,6 +1,7 @@
+ 
  Question Link - https://www.codechef.com/CDHS2022/problems/DECPAL
  
- 1) C++ : 
+1) C++ : 
  
 #include <bits/stdc++.h>
 using namespace std;
