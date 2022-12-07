@@ -1,0 +1,37 @@
+
+Question Link - https://www.codechef.com/problems/DOMINANT2?tab=statement
+
+1) C++ :
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    int n;
+	    cin>>n;
+	    int arr[1001];
+	    int cnt[1001]={0};
+	    for(int i=0;i<n;i++){
+	        cin>>arr[i];
+	        cnt[arr[i]]++;
+	    }
+	    int ans=INT_MIN;
+	    for(int i=0;i<n;i++){
+	        if(cnt[i]>ans){
+	            ans=cnt[i];
+	        }
+	    }	    
+	    int c=0;
+	    for(int i=0;i<n;i++){
+	        if(cnt[i]==ans){
+	            c++;
+	        }
+	    }
+	    if(c==1){cout<<"Yes"<<endl;}
+	    else{cout<<"No"<<endl;}	    
+	}
+	return 0;
+}
