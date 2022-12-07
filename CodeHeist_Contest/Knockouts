@@ -1,0 +1,35 @@
+
+Question Link - https://www.codechef.com/CDHS2022/problems/KNCTS
+
+1) C++ :
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t ;
+	cin >> t ;
+	
+	while(t--){
+	      int n ;
+        cin >> n ;
+        
+        int marks[n] , boasting_students_count = 0 ;
+        for(int i = 0 ; i < n ; i++)
+                cin >> marks[i] ;
+        for(int i = 0 ; i < n ; i++){
+                int low_score_students = 0 , high_score_students = 0 ;
+                for(int j = 0 ; j < n ; j++){
+                        if(i==j){continue;}
+                        else if(marks[i] >= marks[j])
+                            low_score_students++ ;
+                        else
+                            high_score_students++ ;
+                }
+                if(low_score_students > high_score_students)
+                        boasting_students_count++ ;
+        }
+        cout << boasting_students_count << endl ;
+	}
+	return 0;
+}
