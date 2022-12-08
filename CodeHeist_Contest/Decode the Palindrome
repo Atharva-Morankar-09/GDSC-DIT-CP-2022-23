@@ -32,3 +32,21 @@ int main() {
 	}
 	return 0;
 }
+
+2) Python:
+
+for t in range(int(input())):
+    a = input().strip()
+    v = 1
+    n = len(a)
+    for i in range(n//2):
+        if '#' in a[i]+a[n-i-1] or a[i]==a[n-i-1]:
+            continue
+        else:
+            v = 0
+            break
+
+    if v:
+        print("Yes")
+    else:
+        print("No")
