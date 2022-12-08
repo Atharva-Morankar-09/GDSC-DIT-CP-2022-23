@@ -24,3 +24,12 @@ int main() {
 	}
 	return 0;
 }
+
+2) Python:
+
+for i in range(int(input())):
+    n=int(input())
+    if n%5==0:
+        print("False")
+    else:
+        print("True")
