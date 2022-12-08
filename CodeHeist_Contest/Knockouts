@@ -33,3 +33,27 @@ int main() {
 	}
 	return 0;
 }
+
+2) Python:
+
+n= int(input())
+for i in range(n):
+    a=int(input())
+    b=list(map(int, input().split()))
+    c=0
+    
+    for j in range(len(b)):
+        m=0
+        k=0
+        
+        for h in range(len(b)):
+            if h==j:
+                continue
+            elif b[h]<=b[j]:
+                m+=1
+            elif b[h]>b[j]:
+                k+=1
+                
+        if m>k:
+            c+=1
+    print(c)
