@@ -19,3 +19,11 @@ int main() {
 	}
 	return 0;
 }
+
+2) Python:
+
+x,y,z,a = map(int,input().split())
+if a==x or a==y or a==z:
+    print("Yes")
+else:
+    print("No")
