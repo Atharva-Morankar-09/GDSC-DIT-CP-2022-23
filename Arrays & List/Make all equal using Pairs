@@ -34,3 +34,14 @@ int main() {
 	return 0;
 }
 
+2) Python :
+
+T=int(input())
+for i in range(T):
+    N=int(input())
+    A = list(map(int, input().split()))
+    m=0
+    for j in A:
+        C=A.count(j)
+        m=max(m,C)
+    print(N-m)

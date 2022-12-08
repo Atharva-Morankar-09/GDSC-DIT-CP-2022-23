@@ -29,3 +29,22 @@ int main(){
 	}
 	return 0;
 }
+
+2) Python :
+
+for i in range(int(input())):
+    n,k=map(int,input().split())
+    l=list(map(int,input().split()))
+    l.sort(reverse=True)
+    x=0
+    y=0
+    for i in l:
+        x+=i 
+        y+=1 
+        if x>=k:
+            break
+        
+    if x<k:
+        print(-1)
+    else:
+        print(y)

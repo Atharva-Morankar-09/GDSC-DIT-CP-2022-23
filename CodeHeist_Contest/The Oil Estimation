@@ -43,3 +43,32 @@ int main() {
 		cout<<cnt<<endl;
 	}
 }
+
+
+2) Python:
+
+t = int(input())
+ 
+for _t in range(t):
+    n, m, k = list(map(int, input().split()))
+    boxes = list(map(int, input().split()))
+    balls = list(map(int, input().split()))
+    boxes.sort(reverse = True)
+    balls.sort(reverse = True)
+    filled = capacity = i = 0
+    
+    while i < m:
+        if boxes[capacity] <= balls[i] <= boxes[capacity] + k:
+            capacity += 1
+            filled += 1
+ 
+        elif boxes[capacity] > balls[i]:
+            capacity += 1
+            i -= 1
+ 
+        i += 1
+ 
+        if capacity >= n:
+            break
+ 
+    print(filled)
