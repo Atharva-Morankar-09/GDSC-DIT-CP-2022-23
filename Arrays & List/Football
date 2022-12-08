@@ -32,3 +32,16 @@ int main() {
 	}
 	return 0;
 }
+
+2) Pyhton :
+
+for _ in range(int(input())):
+    n = int(input())
+    a = list(map(int,input().split()))
+    b = list(map(int,input().split()))
+    maxi = 0
+    for i in range(n):
+        c = 20 * a[i] - 10 * b[i]
+        if c > maxi:
+            maxi = c 
+    print(maxi)
