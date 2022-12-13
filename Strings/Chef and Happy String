@@ -31,3 +31,20 @@ int main() {
 	}
 	return 0;
 }
+
+2) Python:
+
+for i in range(int(input())):
+    s=input() 
+    vowels=['a','e','i','o','u']
+    f=True
+    for i in range(len(s)-3):
+        if (s[i] in vowels) and (s[i+1] in vowels) and (s[i+2] in vowels):
+            f=False
+            break
+            
+    if f:
+        print("Sad")
+    else:
+        print("Happy")
+
