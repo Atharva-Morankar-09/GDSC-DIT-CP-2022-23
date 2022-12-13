@@ -24,3 +24,14 @@ int main() {
     }
 	return 0;
 }
+
+2) Python:
+
+n=int(input())
+for i in range(n):
+    s=input()
+    x=0
+    for i in s:
+        if i.isnumeric():
+            x+=int(i)
+    print(x)
