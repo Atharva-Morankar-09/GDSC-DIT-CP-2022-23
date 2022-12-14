@@ -31,3 +31,19 @@ int main() {
 	}
 	return 0;
 }
+
+2) Python:
+
+s=input()
+for i in range(int(input())):
+    t=input()
+    f=True
+    for i in t:
+        if i not in s:
+            f=False
+            break 
+        
+    if f:
+        print("Yes")
+    else:
+        print("No")

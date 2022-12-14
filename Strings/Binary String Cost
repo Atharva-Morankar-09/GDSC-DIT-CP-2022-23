@@ -28,3 +28,13 @@ int main() {
 	}
 	return 0;
 }
+
+2) Python:
+
+for i in range(int(input())):
+    n,x,y=map(int,input().split())
+    s=input()
+    if s.count("0")==0 or s.count("1")==0:
+        print(0)
+    else:
+        print(min(x,y))
